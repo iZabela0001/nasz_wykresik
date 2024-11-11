@@ -10,7 +10,8 @@ data(mpg)
 View(mpg)
 ggplot(mpg, aes(x = displ, y = hwy, color = drv)) +
   geom_point() + 
-  labs(title = "Wykres punktowy", x= "displ", y = "hwy")+
-  theme_minimal()
+  labs(title = "Wykres punktowy", x= "wielkość silnika", y = "zużycie silnika")+
+  theme_classic()
 ```
+
 
