@@ -4,14 +4,26 @@ author: "Klaudia Woźniak"
 date: "`r Sys.Date()`"
 output: html_document
 ---
+
 ```{r}
+library(xtable)
+library(ggplot2)
 library(tidyverse)
+```
+
+```{r}
 data(mpg) 
 View(mpg)
 ggplot(mpg, aes(x = displ, y = hwy, color = drv)) +
   geom_point() + 
   labs(title = "Wykres punktowy", x= "wielkość silnika", y = "zużycie silnika")+
   theme_classic()
+```
+
+
+```{r, eval=TRUE, results='asis'}
+wektor1 <- c(mpg$displ)
+wektor2 <- c(mpg$hwy) 
 ```
 
 
