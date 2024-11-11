@@ -17,7 +17,8 @@ View(mpg)
 ggplot(mpg, aes(x = displ, y = hwy, color = drv)) +
   geom_point() + 
   labs(title = "Wykres punktowy", x= "wielkość silnika", y = "zużycie silnika")+
-  theme_classic()
+  theme_dark()
+boxplot(mpg$displ, col="plum")
 ```
 
 
